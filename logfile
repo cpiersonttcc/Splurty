@@ -5,3 +5,13 @@ LOG:  autovacuum launcher started
 FATAL:  role "postgres" does not exist
 FATAL:  role "postgres" does not exist
 FATAL:  role "postgres" does not exist
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2015-09-21 12:37:13 EDT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  lock file "postmaster.pid" already exists
+HINT:  Is another postmaster (PID 7023) running in data directory "/usr/local/var/postgres9.4"?
