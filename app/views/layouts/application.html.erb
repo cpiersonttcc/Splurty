@@ -20,12 +20,13 @@
       			</div>
       	<% end %>
 			</div>
-	<div class="col-xs-4 slogan">
-		Some other shit goes here
+	<div class="col-xs-4 hidden-xs slogan">
+			Imma let you finish, but Star Wars is the greatest franchise of all time!
 	</div>
-	<div class="col-xs-5 links">
+	<div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-xs-5 links">
 	    <!-- Button trigger modal -->
       	<%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+      	&nbsp;&nbsp;
 		<%= link_to 'About', about_path %>
 	</div>
 
@@ -36,12 +37,13 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title" id="myModalLabel">Add your favorite Star Wars quote</h4>
+          <h4 class="modal-title" id="myModalLabel">Add a quote</h4>
         </div>
             <%= simple_form_for Quote.new do |f| %>
                 <div class="modal-body">
-            		<%= f.input :saying %>
-            		<%= f.input :author %>
+            		<%= f.input :saying, :label => "What's your favorite line from Star Wars?", :placeholder => 'Luke, I am your father.' %>
+            		<br />
+            		<%= f.input :author, :label => "Who said it?", :placeholder => 'Darth Vader' %>
           		</div>
         <div class="modal-footer">
           	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -69,10 +71,10 @@
 
 	<div class="footer">
 		<div class="container">
-			<div class="col-xs-6">
+			<div class="col-xs-12 col-xs-6">
 				<%= link_to "This isn\'t enough, I need more", root_path, :class => 'next-quote' %>
 			</div>
-			<div class="col-xs-6 footer-blurb">
+			<div class="col-xs-12 col-xs-6 footer-blurb">
 				Proudly hacked in Boston, MA by <a href="http://cpiersonttcc.github.io/Firehose/">Chris Pierson</a><br />
         		Want to build your own Splurty Web App - <a href="http://thefirehoseproject.com">Learn how to code here</a>	
 			</div>
