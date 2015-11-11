@@ -23,3 +23,21 @@ LOG:  database system was shut down at 2015-09-23 11:28:30 EDT
 LOG:  MultiXact member wraparound protections are now enabled
 LOG:  autovacuum launcher started
 LOG:  database system is ready to accept connections
+ERROR:  column "email" of relation "users" already exists
+STATEMENT:  ALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL
+ERROR:  column "email" of relation "users" already exists
+STATEMENT:  ALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL
+ERROR:  column "email" of relation "users" already exists
+STATEMENT:  ALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL
+ERROR:  column "email" of relation "users" already exists
+STATEMENT:  ALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL
+ERROR:  column "email" of relation "users" already exists
+STATEMENT:  ALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL
+ERROR:  column "email" of relation "users" already exists
+STATEMENT:  ALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL
+ERROR:  column "email" of relation "users" already exists
+STATEMENT:  ALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL
+ERROR:  column "email" of relation "users" already exists
+STATEMENT:  ALTER TABLE "users" ADD "email" character varying DEFAULT '' NOT NULL
+ERROR:  column "created_at" of relation "users" already exists
+STATEMENT:  ALTER TABLE "users" ADD "created_at" timestamp NOT NULL
