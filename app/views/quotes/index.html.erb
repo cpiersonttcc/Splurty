@@ -1,5 +1,5 @@
 <h2>
-  <span>Star Wars Quote <%= @quote.id %></span>
+  <span> <%=@quote.author.gsub(/\s*(\S)\S*/, '\1').upcase%>#<%= @quote.id %></span>
   The best quotes from Star Wars of all time!
 </h2>
 

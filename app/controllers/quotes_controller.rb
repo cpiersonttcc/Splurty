@@ -15,6 +15,14 @@ class QuotesController < ApplicationController
 
 	end
 
+	def initials
+		@quote.author.gsub(/\s*(\S)\S*/, '\1').upcase
+	end
+
+	def show
+		@quote = Quote.find(params[:id])
+	end
+
 	private
 
 	def quote_params
